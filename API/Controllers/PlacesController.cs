@@ -1,5 +1,5 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,23 +9,23 @@ namespace API.Controllers
   [Route("api/[controller]")]
   public class PlacesController : ControllerBase
   {
-    private readonly ApplicationDbContext _db;
-    public PlacesController(ApplicationDbContext db)
+    private readonly IPlaceRepository _repo;
+    public PlacesController(IPlaceRepository repo)
     {
-      _db = db;
+      _repo = repo;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<Place>>> GetPlaces()
     {
-      var places = await _db.Places.ToListAsync();
-      return places;
+      var places = await _repo.GetAllPlacesAsync();
+      return Ok(places);
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Place>> GetPlace(int id)
     {
-      return await _db.Places.FindAsync(id);
+      return await _repo.GetPlaceByIdAsync(id);
     }
   }
 }
