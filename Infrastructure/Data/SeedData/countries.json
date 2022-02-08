@@ -1,32 +1,32 @@
 [
   {
     "Id": 1,
-    "Name": "Estatuss Unidos",
-    "Estatus": true
+    "Name": "Estados Unidos",
+    "Status": true
   },
   {
     "Id": 2,
     "Name": "Colombia",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 3,
     "Name": "Ecuador",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 4,
     "Name": "Mexico",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 5,
     "Name": "Peru",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 6,
     "Name": "Argentina",
-    "Estatus": true
+    "Status": true
   }
 ]

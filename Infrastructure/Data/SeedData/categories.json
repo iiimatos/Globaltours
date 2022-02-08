@@ -2,26 +2,26 @@
   {
     "Id": 1,
     "Name": "Sustentabilidad",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 2,
     "Name": "Familia",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 3,
     "Name": "Aventuras",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 4,
     "Name": "Naturaleza",
-    "Estatus": true
+    "Status": true
   },
   {
     "Id": 5,
     "Name": "Cultura",
-    "Estatus": true
+    "Status": true
   }
 ]
